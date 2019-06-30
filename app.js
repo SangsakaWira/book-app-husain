@@ -1,8 +1,8 @@
 const express = require("express")
-const bodyParser = require("body-parser")
 require("./models/mongoose")
 
 const app = express()
+
 app.use(require("./routes/user"))
 
 app.listen(3000,()=>{
